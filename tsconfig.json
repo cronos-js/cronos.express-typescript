@@ -1,0 +1,16 @@
+{
+  "ts-node": {
+    "swc": true,
+    "esm": true,
+  },
+  "compilerOptions": {
+    "module": "ES2022",
+    "target": "ES2022",
+    "noImplicitAny": true ,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "build",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*", "watch.mjs"]
+}
