@@ -6,14 +6,14 @@ import express from "express";
 
 dotenv.config();
 
-const app: Express = express()
+const app: Express = express();
 
 const port = process.env.PORT || 5050;
 
 app.get("/", (req: Request, res: Response) => {
-	res.send("Express + Cronos");
+	res.send("Express + Cronos.js");
 })
 
 app.listen(port, () => {
-	console.log(`Server running on port ${port}!`);
+	console.log(`🚀 Server running on port ${port}!`);
 })
