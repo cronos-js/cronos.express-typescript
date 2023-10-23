@@ -1,16 +1,30 @@
 {
   "ts-node": {
-    "swc": true,
-    "esm": true,
+    "swc": true
   },
   "compilerOptions": {
-    "module": "ES2022",
-    "target": "ES2022",
-    "noImplicitAny": true ,
-    "moduleResolution": "node",
-    "sourceMap": true,
+    "target": "es2022",
+    "lib": ["es2022"],
+    "strict": true,
+    "module": "CommonJS",
+    "rootDir": "src",
     "outDir": "build",
-    "allowSyntheticDefaultImports": true
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUncheckedIndexedAccess": true,
+    "allowUnreachableCode": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
   },
-  "include": ["src/**/*", "watch.mjs"]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }

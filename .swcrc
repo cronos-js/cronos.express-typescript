@@ -1,16 +1,14 @@
 {
-  "minify": true,
   "jsc": {
     "parser": {
       "syntax": "typescript",
-      "tsx": false,
-      "top-LevelAwait": true
+      "decorators": true,
+      "dynamicImport": true
     },
-    "minify": {
-      "compress": true
-    }
+    "target": "es2022"
   },
   "module": {
-    "type": "es6"
-  }
+    "type": "commonjs"
+  },
+  "sourceMaps": true
 }
