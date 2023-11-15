@@ -11,9 +11,9 @@ const app: Express = express();
 const port = process.env.PORT || 5050;
 
 app.get("/", (req: Request, res: Response) => {
-	res.send("Express + Cronos.js");
-})
+  res.send("Express + Cronos");
+});
 
 app.listen(port, () => {
-	console.log(`🚀 Server running on port ${port}!`);
-})
+  console.log(`🚀  \x1b[1mServer running on port \x1b[33m${port}\x1b[0m`);
+});
